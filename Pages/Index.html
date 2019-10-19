@@ -25,19 +25,29 @@
     <link rel="stylesheet" href="../wwwroot/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../wwwroot/CSS/site.css">
 </head>
-<body>
-        <div id="Lateral" class="Menulateral">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Pag 1</a>
-                <a href="#">Pag 2</a>
-                <a href="#">Pag 3</a>
-                <a href="#">Pag 4</a>
-              </div>              
-              <div id="Contenido">
-                <button class="openbtn" onclick="openNav()">&#9776;</button>
-                <h2>Titulo del contenido</h2>
-                
-              </div>
+<body>      
+    <div class="Bsuperior">
+      <div class="row w-100">
+        <div class="col-1">
+          <div class="CBton">
+            <a  href="javascript:void(0)" class="openbtn" onclick="openNav()" id="btnabrir">&#9776;</a>
+            <a  href="javascript:void(0)" class="openbtn" style="display: none;" onclick="closeNav()" id="btncerrar">&#9776;</a>
+          </div>
+      </div>
+      <div class="col-10 text-center"><h2>Titulo contenido</h2></div>
+      <div class="col-1"><img src="../wwwroot/Images/Lmenu.png" style="width: 100px; height: 100%;" alt="Logo Unad"></div>
+      </div>        
+    </div>  
+    <div id="Lateral" class="Menulateral">      
+        <a href="#">Pag 1</a>
+        <a href="#">Pag 2</a>
+        <a href="#">Pag 3</a>
+        <a href="#">Pag 4</a>
+      </div>                
+    <div id="Contenido">
+      <h2>Titulo del contenido</h2>
+      
+    </div>
 
  <!--Carga de scripst-->   
  <script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
@@ -45,3 +55,4 @@
  <script src="../wwwroot/Js/OVI.js">   </script>
 </body>
 </html>
+
