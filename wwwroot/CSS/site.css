@@ -1,0 +1,73 @@
+/*
+* Autor: Fabio Andres Tobon Quesada
+* email: fandres69@gmail.com
+* Fecha: Octubre de 2019
+* Descripcion: Hoja de estilos pagina modelo OVI conecxion a Mysql con Php.
+*
+*/
+
+/*Propiedades menu lateral*/
+.Menulateral {
+    height: 100%; 
+    width: 0; 
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #005883; 
+    overflow-x: hidden;
+    padding-top: 60px; 
+    transition: 0.5s; 
+  }
+  
+/*Propiedades de los enlaces del menu*/
+  .Menulateral a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #333333;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /*Evento de cambio de color en los enlaces del menu */
+  .Menulateral a:hover {
+    color: #f1f1f1;
+  }
+  
+  /*Propiedades que ocultan el menu lateral*/
+  .Menulateral .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  
+  /*Propiedades que muestran el menu lateral*/
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color:  #005883;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  /* Propiedades del boton que abre el menu */
+  .openbtn:hover {
+    background-color: #F0B429;
+  }
+  
+  /* Estilo cuando se despliega el menu lateral */
+  #Contenido {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* Propiedad para pantallas mas pequñas*/
+  @media screen and (max-height: 450px) {
+    .Menulateral {padding-top: 15px;}
+    .Menulateral a {font-size: 18px;}
+  }
