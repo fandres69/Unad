@@ -82,3 +82,7 @@
     .Menulateral {padding-top: 15px;}
     .Menulateral a {font-size: 18px;}
   }
+
+  .justificado{
+    text-justify: distribute-all-lines;
+  }
