@@ -2,7 +2,7 @@
 * Autor: Fabio Andres Tobon Quesada
 * email: fandres69@gmail.com
 * Fecha: Octubre de 2019
-* Descripcion: Hoja de estilos pagina modelo OVI conecxion a Mysql con Php.
+* Descripción: Hoja de estilos pagina modelo OVI conexión a Mysql con Php.
 *
 */
 
@@ -18,6 +18,7 @@
     overflow-x: hidden;
     padding-top: 60px; 
     transition: 0.5s; 
+    margin-top: 60px;
   }
   
 /*Propiedades de los enlaces del menu*/
@@ -34,40 +35,54 @@
   .Menulateral a:hover {
     color: #f1f1f1;
   }
-  
-  /*Propiedades que ocultan el menu lateral*/
-  .Menulateral .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+ 
+  .Bsuperior{
+    
+    background-color: #005883;   
+    height: 70px;
   }
   
+  .CBton{
+    height:100% ;
+    width: 250px;
+  }
   
+   
   /*Propiedades que muestran el menu lateral*/
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color:  #005883;
-    color: white;
-    padding: 10px 15px;
-    border: none;
+  .CBton a {    
+    padding: 7px 7px 7px 7px;
+    text-decoration: none;
+    margin-left: 12px;
+    font-size: 36px;
+    color: #333333;
+    display: block;
+    transition: 0.3s;      
   }
   
-  /* Propiedades del boton que abre el menu */
-  .openbtn:hover {
-    background-color: #F0B429;
+  /* Propiedades del botón que abre el menu */
+  .CBton a:hover {
+   color: #F0B429;
   }
-  
+.Bsuperior h2{
+  color: white;
+  padding: 5px,5px,5px,5px;
+  margin-top: 10px;
+}
+
+
+
   /* Estilo cuando se despliega el menu lateral */
   #Contenido {
     transition: margin-left .5s; /* If you want a transition effect */
     padding: 20px;
   }
   
-  /* Propiedad para pantallas mas pequñas*/
+  /* Propiedad para pantallas mas pequeñas*/
   @media screen and (max-height: 450px) {
     .Menulateral {padding-top: 15px;}
     .Menulateral a {font-size: 18px;}
+  }
+
+  .justificado{
+    text-justify: distribute-all-lines;
   }
