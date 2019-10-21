@@ -86,3 +86,22 @@
   .justificado{
     text-justify: distribute-all-lines;
   }
+
+  .botonapp{
+   background-color: #005883;
+   color: #F0B429;
+   border: 1px solid #005883;
+   height: 40px;
+   width: 100px;
+  }
+  .botonapp:hover{
+    background-color:white;
+    border: 1px solid #F0B429;  
+    
+  }
+ .sellos{
+  position: fixed;  
+  bottom: 0;
+  right:25px;
+
+ }

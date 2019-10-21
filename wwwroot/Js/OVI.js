@@ -23,3 +23,17 @@ function openNav() {
   }
 
   
+  function S_introduccion(){
+    window.location.href="Introduccion.html";
+  }
+  
+  function S_InstalandoXAMP(){
+    window.location.href="InstalandoXAMP.html";
+  }
+
+
+  function Clicktarget(x){
+  $(x).click();  
+  }
+  
+  
