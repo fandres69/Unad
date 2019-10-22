@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="../wwwroot/CSS/site.css">
 </head>
 <body>      
-    <div class="Bsuperior">
+    <div class="Bsuperior fixed-top">
       <div class="row w-100">
         <div class="col-1">
           <div class="CBton">
@@ -45,11 +45,127 @@
         <a href="#">Pag 4</a>
     </div>                
     <div id="Contenido">
-      
-     
-    </div> <br/><br/>
-      
+      <br/>
+      <br/>
+      <br/>
+      <div class="container tab-content" id="contenidotematico" >        
+        <div id="P1" class="tab-pane fade active show" role="tabpanel" aria-labelledby="1p">
+          <div class="card  p-3 shadow">
+            <div class="text-center">
+                <h3>Objetivo</h3>
+                <br/>
+                <p class="text-justify">
+                  El objetivo de la presente sección aprender a realizar la instalación del servidor Apache,
+                  con los módulos de PHP, MySQL, y otros módulos útiles para un entorno de desarrollo
+                  de aplicaciones web. 
+                </p>
+              </div>
+            </div>
+            <br/>
+            <br/>
+            <br/>
+            <div class="container-fluid">
+              <div class="text-center">
+              <a href="https://www.apachefriends.org/es/index.html" target="_blank"><img src="../wwwroot/Images/Xampp.png" alt="Xamp logo" class="img-fluid"></a>
+              </div>
+              <p class="text-justify">
+                Para comenzar debemos descargar XAMPP, que es uno de los entornos de desarrollo con 
+                lenguaje PHP más popular del mundo, es una distribución de apache totalmente gratuita,
+                multiplataforma y de fácil instalación.<br>
+
+                Para comenzar haz clic en la imagen de la parte superior y descarga el archivo ejecutable
+                según tu sistema operativo, para el ejemplo de esta OVI usaremos Windows 10 de 64 bits.              
+              </p><br/>
+              <div class="text-center">
+                <img src="../wwwroot/Images/Xdownload.png" alt="Descarga Xampp" class="img-thumbnail">
+              </div><br/>
+              <div class="text-center">
+                  <img src="../wwwroot/Images/Xdownload2.png" alt="Descarga Xampp" class="img-thumbnail">
+                </div><br/>
+            </div>
+      </div> 
+      <div id="P2"class="tab-pane fade" role="tabpanel" aria-labelledby="2p" >
+        prueba
+      </div>
+      <div id="P3"class="tab-pane fade" role="tabpanel" aria-labelledby="3P" >
+        prueba 3
+      </div>
+      <div id="P4"class="tab-pane fade" role="tabpanel" aria-labelledby="4P" >
+        prueba 4
+      </div>
+      <div id="P5"class="tab-pane fade" role="tabpanel" aria-labelledby="5P" >
+        prueba 5
+      </div>
+      <div id="P6"class="tab-pane fade" role="tabpanel" aria-labelledby="6P" >
+        prueba 6
+      </div>
+      <div id="P7"class="tab-pane fade" role="tabpanel" aria-labelledby="7P" >
+        prueba 7
+      </div>
+      <div id="P8"class="tab-pane fade" role="tabpanel" aria-labelledby="8P" >
+        prueba 8
+      </div>
+      <div id="P9"class="tab-pane fade" role="tabpanel" aria-labelledby="9P" >
+        prueba 9
+      </div>
     </div>
+      <br/> 
+      <br/> 
+      <div class="container">
+        <ul class="nav pagination" id="myTab" role="tablist">
+          <li class="nav-item page-item">
+            <a class="nav-link page-link active" id="1P" data-toggle="tab" href="#P1" role="tab" aria-controls="P1"
+              aria-selected="true">1</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="2P" data-toggle="tab" href="#P2" role="tab" aria-controls="P2"
+              aria-selected="false">2</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="3P" data-toggle="tab" href="#P3" role="tab" aria-controls="P3"
+              aria-selected="false">3</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="4P" data-toggle="tab" href="#P4" role="tab" aria-controls="P4"
+              aria-selected="false">4</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="5P" data-toggle="tab" href="#P5" role="tab" aria-controls="P5"
+              aria-selected="false">5</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="6P" data-toggle="tab" href="#P6" role="tab" aria-controls="P6"
+              aria-selected="false">6</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="7P" data-toggle="tab" href="#P7" role="tab" aria-controls="P7"
+              aria-selected="false">7</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="8P" data-toggle="tab" href="#P8" role="tab" aria-controls="P8"
+              aria-selected="false">8</a>
+          </li>
+          <li class="nav-item page-item">
+            <a class="nav-link page-link" id="9P" data-toggle="tab" href="#P9" role="tab" aria-controls="P9"
+              aria-selected="false">9</a>
+          </li>
+        </ul>       
+      </div>
+      <div class="container text-center d-none" id="Botones">
+          <div class="row w-100">           
+            <div class="col-md-2 w-25"><button class="botonapp">Anterior</button></div>
+            <div class="col-md-2 w-25"><button class="botonapp">Siguiente</button></div>          
+            <div class="col-md-2 w-25"><input type="text" id="pagina" value="1" hidden> </div>         
+                
+          </div>
+        </div>
+      
+    </div> 
+    <br/><br/>
+     
+        <br/>  
+        <br/>  
+        <br/>  
           <div class="text-right">            
                   <img class="sellos p-1" src="../wwwroot/Images/Sellos2.png" alt="Certificación calidad" style="width: 400px; height: 110px;" >
             </div>
