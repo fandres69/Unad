@@ -48,6 +48,7 @@
       <br/>
       <br/>
       <br/>
+      <span id="uperpage"></span>
       <div class="container tab-content" id="contenidotematico" >        
         <div id="P1" class="tab-pane fade active show" role="tabpanel" aria-labelledby="1p">
           <div class="card  p-3 shadow">
@@ -82,32 +83,133 @@
               <div class="text-center">
                   <img src="../wwwroot/Images/Xdownload2.png" alt="Descarga Xampp" class="img-thumbnail">
                 </div><br/>
+                <p class="text-justify">
+                  Una vez descargado el archivo ejecutamos el instalador como administrador y seguimos
+                  los pasos del instalador que son muy sencillos.
+                </p>
             </div>
       </div> 
       <div id="P2"class="tab-pane fade" role="tabpanel" aria-labelledby="2p" >
-        prueba
+      <br/>
+      <div class="text-center">
+        <img src="../wwwroot/Images/Ixampp1.png" alt="imagen 1 instalación Xampp" class="img-thumbnail">
+      </div>
+      <br/>
+       <p class="text-justify">
+          Hacemos clic en el botón siguiente y seleccionamos los módulos que queremos instalar, 
+          por default vienen todos seleccionados, recuerda que debemos instalar MySQL y PHP,
+           además el módulo de phpMyAdmin, el cual es el entorno gráfico con el cual gestionaremos
+           los datos de nuestra base de datos.
+       </p>  
+       <br>
+        <div class="text-center">
+          <img src="../wwwroot/Images/Ixampp2.png" alt="imagen 2 instalación Xampp" class="img-thumbnail">
+        </div>
+        <br/>
+        <p class="text-justify">
+            Una vez seleccionados los módulos a instalar has clic en siguiente y selecciona la ubicación
+            donde se van a instalar los módulos necesarios para que nuestro servidor XAMPP funcione.
+        </p>
+        <br/>
+        <div class="text-center">
+           <img src="../wwwroot/Images/Ixampp3.png" alt="imagen 3 instalación Xampp" class="img-thumbnail">
+        </div>
+        <br/>
+        <p class="text-justify">
+          Tras seleccionar la ubicación simplemente hacemos clic en siguiente.
+        </p>
+        <div class="text-center">
+           <img src="../wwwroot/Images/Ixampp4.png" alt="imagen 4 instalación Xampp" class="img-thumbnail">
+        </div>
+        <br/>
+        <p class="text-justify">
+            Dejamos activa la casilla de verificación, la cual nos lleva al sitio oficial de bitnami,
+            donde podemos conseguir módulos y aplicaciones que pueden correr desde el servidor apache
+            que estamos instalando, y en la pantalla siguiente a esta simplemente hacemos clic en siguiente
+            y eso es todo.
+        </p>
+        <br/>
+        <div class="text-center"> <img src="../wwwroot/Images/Ixampp5.png" alt="imagen 5 instalación Xampp" class="img-thumbnail"></div>        
       </div>
       <div id="P3"class="tab-pane fade" role="tabpanel" aria-labelledby="3P" >
-        prueba 3
+       <div class="text-center"> <img src="../wwwroot/Images/CXampp.png" alt="imagen 6 Configuración Xampp " class="img-thumbnail"></div>
+       <br/>
+       <p class="text-justify">
+          Una vez arranque tu aplicación escoges el lenguaje para iniciar los servicios, solo hay disponibles alemán e inglés.
+          <br/>
+          <br/>
+           <img src="../wwwroot/Images/CXampp2.png" alt="imagen 7 Configuración Xampp" class="img-thumbnail">
+           <br/>
+           <br/>
+           Al abrir el XAMPP control encontraras un panel de administración sencillo,
+           antes de arrancar los servicios de MySQL y Apache hacemos clic sobre Shell y 
+           verificamos las versiones de instalación.
+       </p>
+       <div class="text-center"> <img src="../wwwroot/Images/CXampp3.png" alt="imagen 8 Configuración Xampp" class="img-thumbnail"></div>
+       <br/>
+       <p class="text-justify">
+          En la consola que se abre escribes el comando y oprimes la tecla enter, y aparecerá la versión
+          instalada de PHP y MySQL, recuerda ejecutar cada instrucción por separado.
+       </p>
+       <br/>      
+         <div class="row">
+           <div class="col-5"></div>
+           <div class="col-3">
+             <div class="card-header">
+               <code>1</code> <code style="color: blue;">php --version</code>
+               <br/>
+               <code>2</code> <code style="color: blue;">Mysql --version</code>
+             </div>
+           </div>
+           <div class="col-5"></div>
+         </div>
+      <br/>
+      <div class="text-center"> <img src="../wwwroot/Images/CXampp4.png" alt="imagen 9 Configuración Xampp" class="img-thumbnail"></div>
+     
       </div>
       <div id="P4"class="tab-pane fade" role="tabpanel" aria-labelledby="4P" >
-        prueba 4
+          <br/>
+          <p class="text-justify">
+              Ahora iniciamos los procesos y accedemos a las pagina de inicio del servidor y después
+              a nuestro phpMyAdmin, para verificar nuestro motor de base de datos.
+          </p>
+          <div class="text-center">
+             <img src="../wwwroot/Images/Axampp1.png" alt="imagen 9 arranque Xampp" class="img-thumbnail">
+          </div>
+          <br/>
+          <p class="text-justify">
+              Al arrancar tus servicios se te solicitara autorizar dichos servicios en el firewall,
+              cuando el servicio arranca correctamente veras el nombre de los servicios resaltados en color verde,
+              y el número de los puestos activos con los que podemos usar dichos servicios.
+          </p>
+          <div class="text-center">
+             <img src="../wwwroot/Images/Axampp2.png" alt="imagen 10 arranque Xampp" class="img-thumbnail">
+          </div>
+          <br/>
+          <p class="text-justify">
+          Ya con los servicios activos abre tu explorador web y escribe en la barra la url <i class="font-weight-bold">localhost:80</i>, 
+          si todo salió bien entraras a la página de bienvenida de apache, denominada <code style="color: blue;">localhost/dashboard/</code>          
+          </p>
+          <div class="text-center">
+             <img src="../wwwroot/Images/Axampp3.png" alt="imagen 11 arranque Xampp" class="img-thumbnail">
+          </div>
+          <br/>
       </div>
       <div id="P5"class="tab-pane fade" role="tabpanel" aria-labelledby="5P" >
-        prueba 5
-      </div>
-      <div id="P6"class="tab-pane fade" role="tabpanel" aria-labelledby="6P" >
-        prueba 6
-      </div>
-      <div id="P7"class="tab-pane fade" role="tabpanel" aria-labelledby="7P" >
-        prueba 7
-      </div>
-      <div id="P8"class="tab-pane fade" role="tabpanel" aria-labelledby="8P" >
-        prueba 8
-      </div>
-      <div id="P9"class="tab-pane fade" role="tabpanel" aria-labelledby="9P" >
-        prueba 9
-      </div>
+        <br/>
+        <div class="text-center">
+           <img src="../wwwroot/Images/Axampp4.png" alt="imagen 12 arranque Xampp" class="img-thumbnail">
+        </div>
+        <br/>
+        <p class="text-justify">
+        Al hacer clic en la parte superior en phpMyAdmin, ingresaras al motor de base de datos,
+        con lo que veras que <span class="font-weight-bold">tu instalación fue un éxito</span>
+        </p>
+        <div class="text-center">
+           <img src="../wwwroot/Images/Axampp5.png" alt="imagen 13 arranque Xampp" class="img-thumbnail">
+        </div>
+        <br/>
+      </div>     
     </div>
       <br/> 
       <br/> 
@@ -123,7 +225,7 @@
           </li>
           <li class="nav-item page-item">
             <a class="nav-link page-link" id="3P" data-toggle="tab" href="#P3" role="tab" aria-controls="P3"
-              aria-selected="false">3</a>
+              aria-selected="false" onclick="Superiorpage()">3</a>
           </li>
           <li class="nav-item page-item">
             <a class="nav-link page-link" id="4P" data-toggle="tab" href="#P4" role="tab" aria-controls="P4"
@@ -132,23 +234,7 @@
           <li class="nav-item page-item">
             <a class="nav-link page-link" id="5P" data-toggle="tab" href="#P5" role="tab" aria-controls="P5"
               aria-selected="false">5</a>
-          </li>
-          <li class="nav-item page-item">
-            <a class="nav-link page-link" id="6P" data-toggle="tab" href="#P6" role="tab" aria-controls="P6"
-              aria-selected="false">6</a>
-          </li>
-          <li class="nav-item page-item">
-            <a class="nav-link page-link" id="7P" data-toggle="tab" href="#P7" role="tab" aria-controls="P7"
-              aria-selected="false">7</a>
-          </li>
-          <li class="nav-item page-item">
-            <a class="nav-link page-link" id="8P" data-toggle="tab" href="#P8" role="tab" aria-controls="P8"
-              aria-selected="false">8</a>
-          </li>
-          <li class="nav-item page-item">
-            <a class="nav-link page-link" id="9P" data-toggle="tab" href="#P9" role="tab" aria-controls="P9"
-              aria-selected="false">9</a>
-          </li>
+          </li>       
         </ul>       
       </div>
       <div class="container text-center d-none" id="Botones">

@@ -36,7 +36,14 @@ function openNav() {
   $(x).click();  
   }
 
+  //Función que retorna la pagina a la parte superior tras hacer click en los botones de paginación
+$(document).ready(function () {
 
+  $('.page-link').click(function () {
+    $('body,html').animate({
+      scrollTop: '0px'
+    },300);
+   
+  });
+});
 
-
-  
