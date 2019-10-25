@@ -47,3 +47,16 @@ $(document).ready(function () {
   });
 });
 
+function verimg(params,contenedor) {
+var rta=params.id;
+var im=document.createElement("img");
+$(contenedor).empty();
+im.id="vimm";
+im.src=rta;
+im.style.height="650px";
+im.style.width="750px";
+
+contenedor.appendChild(im);
+$("#vmodal").click();
+}
+

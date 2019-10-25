@@ -105,3 +105,15 @@
   right:25px;
 
  }
+
+ .tips{
+   color: white;
+   background-color: white;
+  
+ }
+ .tips:hover{
+   color: white;
+   background-color: #333333;
+   font-size: 32px;
+  
+ }
