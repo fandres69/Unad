@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="../wwwroot/Images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../wwwroot/Images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../wwwroot/Images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../wwwroot/Images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../wwwroot/Images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../wwwroot/Images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../wwwroot/Images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../wwwroot/Images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../wwwroot/Images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../wwwroot/Images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../wwwroot/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../wwwroot/Images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../wwwroot/Images/favicon-16x16.png">
+    <link rel="manifest" href="../wwwroot/Images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../wwwroot/Images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title> Programación web 1</title>
+    <link rel="stylesheet" href="../wwwroot/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../wwwroot/CSS/site.css">
+</head>
+<body>
+    <div class="Bsuperior fixed-top">
+      <div class="row w-100">
+        <div class="col-1">
+          <div class="CBton">
+            <a  href="javascript:void(0)" class="openbtn" onclick="openNav()" id="btnabrir">&#9776;</a>
+            <a  href="javascript:void(0)" class="openbtn" style="display: none;" onclick="closeNav()" id="btncerrar">&#9776;</a>
+          </div>
+      </div>
+      <div class="col-10 text-center"><h2>Creando archivo PHP de conexión</h2></div>
+      <div class="col-1"><img src="../wwwroot/Images/Lmenu.png" style="width: 100px; height: 100%;" alt="Logo Unad"></div>
+      </div>        
+    </div>  
+    <div id="Lateral" class="Menulateral">
+        <a href="Index.html">Inicio</a>
+        <a href="Introduccion.html">Introducción</a>
+        <a href="InstalandoXAMP.html">Instalando XAMP</a>
+        <a href="PreparandoBD.html">Preparando mi BD</a>
+        <a href="ConexcionPHP.html">Conexión a BD con PHP</a>
+      </div>
+    <div id="Contenido">
+    <br/>
+    <br/>
+    <br/>	
+    <div class="container">
+      <div class="card p-3 shadow alert-info">
+          <h3 class="text-center">Objetivo </h3>
+          <br/>
+          <p class="text-justify ">
+              <br/>
+              El objetivo de la presente sección es aprender a realizar un archivo de configuración de conexiones
+              a bases de datos con PHP, a fin de poder usar esas propiedades y métodos de conexión para realizar
+              las operaciones CRUD en el motor de base de datos a través de nuestro formulario web.
+              <br/>
+              <i class="font-weight-bold">Empecemos…</i>                 
+          </p>
+        </div>      
+      </div>
+  <br/>
+  <div class="container">
+    <p class="text-justify">
+        Para esta sección deberás usar el editor de código que mas te guste, en este ejercicio utilizamos
+        Visual studio Code, el cual es sumamente ligero, fácil de utilizar y es multiplataforma y multi lenguaje.
+    <br/>
+        Para comenzar ve a la ruta donde instalaste tu servidor Xampp, y dentro del directorio <span class="font-weight-bold">htdocs</span>,
+        crea un nuevo directorio nombrándolo <span class="font-weight-bold" style="color: blue;">MyCRUD</span>.
+        <br/>
+        Una vez creado el directorio en tu editor de código creas un archivo de extensión <span class="font-weight-bold">.php</span>
+        dentro de este directorio, llamado conexión, es decir <span class="font-weight-bold">conexión.php</span>.
+        <br/>
+        Desde Visual Studio Code simplemente haces clic derecho en el explorador de Windows y haces clic en Open with Code. 
+    </p><br/>
+    <div class="text-center">
+       <img src="../wwwroot/Images/COD1.png" alt="imagen 1 conexión con php" class="img-thumbnail">
+    </div>
+    <br/>
+    <p class="text-justify">
+        y con el editor abierto simplemente haces clic en nuevo y pones el nombre de tu archivo y su extensión, 
+        desde el panel izquierdo sobre el nodo nombrado con el nombre del directorio que acabamos de crear,
+        recuerda esta es nuestra carpeta de proyecto.
+    </p><br/>
+     <img src="../wwwroot/Images/COD2.png" alt="imagen 2 conexión con php" class="img-thumbnail">
+     <br/>
+      <img src="../wwwroot/Images/COD3.png" alt="imagen 2 conexión con php" class="img-thumbnail">
+      <br/>
+      <p class="text-justify">
+          Al crear tu archivo se abrirá en la parte derecha, en el área de edición de código, y simplemente pegas el siguiente código.
+      </p><br/>
+      <div class="container" style="background-color: #444444;" >
+        <p class="text-justify ">
+          <pre style="color: white;">
+
+            <code style="color: #569cd6;">&lt?php</code>
+            <code style="color: #6a9955;"> /*Datos de conexion a la base de datos*/</code>
+            <code style="color: #9cdcfe;"> $db_host</code> =<code style="color:#ce9178;">"localhost";</code><code style="color: #6a9955;">// Direccion IP donde nos conectaremos</code>
+            <code style="color: #9cdcfe;"> $db_user</code> =<code style="color: #ce9178;">"fatobonq";</code><code style="color: #6a9955;">// Usuario de base de datos que creamos</code>
+            <code style="color: #9cdcfe;"> $db_pass</code> =<code style="color: #ce9178;">"#M4g4ly2108$";</code><code style="color: #6a9955;">//contraseña que creamos</code>
+            <code style="color: #9cdcfe;"> $db_name</code>= <code style="color: #ce9178;">"cursos";</code><code style="color: #6a9955;">//nombre de la base de datos que creamos</code>
+              
+            <code style="color: #6a9955;">//La variable $con  ensambla los argumentos que usa la función mysli_connect</code>
+            <code style="color: #569cd6;">$con</code> = <code style="color: #dcdcaa;">mysqli_connect</code>(<code style="color: #9cdcfe;">$db_host, $db_user, $db_pass, $db_name</code>);
+              
+             <code style="color:#c586c0;">if</code>(<code style="color: #dcdcaa;">mysqli_connect_errno</code> <code style="color:#c586c0;">()</code>){
+              <code style="color: #dcdcaa;">echo</code> '<code style="color:#ce9178;">No se pudo conectar a la base de datos : </code>'<code style="color: #dcdcaa;">.mysqli_connect_error</code><code style="color:#c586c0;">()</code>;
+              }
+              <code style="color: #569cd6;">?&gt</code>
+          </pre>              
+        </p><br/>
+      </div>
+      <br/>
+      <br/>
+      <p class="text-justify">
+      Guarda el archivo y ya está, podemos continuar. 
+      </p><br/>
+
+  </div>
+
+</div>
+
+
+<!--Carga de scripst-->   
+<script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+<script src="../wwwroot/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="../wwwroot/Js/OVI.js">   </script>
+</body>
+</html>
