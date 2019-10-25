@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">    
+    <link rel="apple-touch-icon" sizes="57x57" href="../wwwroot/Images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../wwwroot/Images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../wwwroot/Images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../wwwroot/Images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../wwwroot/Images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../wwwroot/Images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../wwwroot/Images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../wwwroot/Images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../wwwroot/Images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../wwwroot/Images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../wwwroot/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../wwwroot/Images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../wwwroot/Images/favicon-16x16.png">
+    <link rel="manifest" href="../wwwroot/Images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../wwwroot/Images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">   
+    <title> Programación web 1</title>
+    <link rel="stylesheet" href="../wwwroot/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../wwwroot/CSS/site.css">
+</head>
+<body>      
+    <div class="Bsuperior fixed-top">
+      <div class="row w-100">
+        <div class="col-1">
+          <div class="CBton">
+            <a  href="javascript:void(0)" class="openbtn" onclick="openNav()" id="btnabrir">&#9776;</a>
+            <a  href="javascript:void(0)" class="openbtn" style="display: none;" onclick="closeNav()" id="btncerrar">&#9776;</a>
+          </div>
+      </div>
+      <div class="col-10 text-center"><h2>Introducción</h2></div>
+      <div class="col-1"><img src="../wwwroot/Images/Lmenu.png" style="width: 100px; height: 100%;" alt="Logo Unad"></div>
+      </div>        
+    </div>  
+    <div id="Lateral" class="Menulateral">      
+        <a href="Index.html">Inicio</a>
+        <a href="Introduccion.html">Introducción</a>
+        <a href="InstalandoXAMP.html">Instalando XAMP</a>
+        <a href="PreparandoBD.html">Preparando mi BD</a>
+      </div>                
+    <div id="Contenido">
+        <br/>
+        <br/>
+        <br/>
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link active" id="Intro" data-toggle="tab" href="#Introduccion" role="tab" aria-controls="home" aria-selected="true">Introducción</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="PHP-tab" data-toggle="tab" href="#PHP" role="tab" aria-controls="profile" aria-selected="false">PHP</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="Mysql-tab" data-toggle="tab" href="#Mysql" role="tab" aria-controls="contact" aria-selected="false">MySql MariaDB</a>
+            </li>
+            </ul>
+            <div class="tab-content" id="myTabContent"><br/>
+            <div class="tab-pane fade show active" id="Introduccion" role="tabpanel" aria-labelledby="Intro">
+                <div class="container">
+                    <h3 class="text-center">Bienvenido al OVI vinculación de una base de datos con una página PHP</h3>
+                    <br/>
+                    <p class="text-justify">                        
+                        En el mundo de las páginas y aplicaciones web el uso de datos es muy importante
+                        y necesario, por eso como profesionales en formación, debemos tener la capacidad
+                        de conectar nuestras aplicaciones a una base de datos y poder guardar la información
+                        tanto de la aplicación, como de nuestros usuarios.
+                    </p>
+                    <p class="text-justify">
+                        En este OVI mostraremos como lograr que una aplicación o página web con PHP,
+                        se conecte a una base de datos, en este caso MYSQL MariaDB, y gestionar la creación,
+                        lectura, actualización y eliminación de datos (CRUD), desde nuestros formularios web.
+                    </p>
+                    <p class="text-justify">
+                        Para lograra este objetivo debemos contar con un servidor apache XAMP o WAMP instalado,
+                        el cual incluye el intérprete de código para PHP, una instancia de base de datos MariaDB,
+                        y un editor de código de tu preferencia.
+                    </p>
+                    <p>
+                        Recuerda seguir paso a paso en su orden de aparición, cada uno de los temas que encuentras en el panes de navegación
+                        a tu izquierda.
+                        Te recomendamos echar una ojeada a las pestañas que encuentras en esta página con los títulos de PHP 
+                        y MYSQL MariaDB, para que tengas una idea clara de estos dos importantes componentes para nuestro aprendizaje.
+                            
+                        <h5>Éxito.</h5>                             
+                    </p>
+                    
+                </div>
+                <div class="container">                   
+                    <div class="text-right" style="height: 100px;">
+                        <button class="botonapp" onclick="Clicktarget('#PHP-tab')" >Siguiente</button>
+                    </div>
+                </div>
+               
+            </div> <br/><br/>
+            <div class="tab-pane fade" id="PHP" role="tabpanel" aria-labelledby="PHP-tab">
+            <div class="container">
+                <h3 class="text-center">PHP</h3>
+                <p>
+                    PHP es un lenguaje de programación de propósito general del lado del servidor, el cual es aplicado en el desarrollo web
+                    de contenido dinámico, aportando mucho a la evolución del concepto de aplicaciones en línea.<br/>
+                    Su aplicación es muy sencilla y se puede incrustar en paginas web,
+                    coexistiendo con las etiquetas propias del lenguaje de marcado HTML,
+                    y su facilidad de implementación y escritura lo han posicionado como uno de los lenguajes 
+                    fuertes de páginas y aplicaciones web.<br/>   <br/>                     
+                   <div class="alert-info font-weight-bold">
+                       Al momento de realizar esta OVI, la versión de PHP es la 7.3.9.
+                       Para más información haz clic en los siguientes imágenes.                        
+                   </div>
+                </p>
+                <br>
+                <div class="row text-center">
+                    <div class="col-6 w-50">
+                        <a href="https://www.php.net/manual/es/intro-whatis.php" target="_blank"><img src="../wwwroot/Images/1280px-PHP-logo.png" alt="PHP logo" style="width: 250px;height: 150px;"></a>
+                    </div>
+                    <div class="col-6 w-50">
+                            <a href="https://es.wikipedia.org/wiki/PHP"  target="_blank"><img src="../wwwroot/Images/1200px-Wikipedia-logo-v2-es.png" alt="wikipedia logo" style="width: 1S50px;height: 150px;"></a>                       
+                    </div>
+                </div><br/>                
+                <br/>                
+                <div class="row"> 
+                  
+                    <div class="col-lg-10">
+                        <div class="text-right" style="height: 100px;">
+                          <button class="botonapp" onclick="Clicktarget('#Intro')" >Anterior</button>
+                        </div>
+                    </div>  
+                    <div class="col-lg-2">
+                            <div class="text-right" style="height: 100px;">
+                              <button class="botonapp" onclick="Clicktarget('#Mysql-tab')" >Siguiente</button>
+                            </div>
+                        </div>                     
+                </div>
+            </div>    
+            </div>
+            <div class="tab-pane fade" id="Mysql" role="tabpanel" aria-labelledby="Mysql-tab">
+                <div class="container">
+                    <h3 class="text-center">MySQL MariaDB</h3>
+                    <br/>
+                    <p>
+                         Es un sistema de gestión de bases de datos derivado de MySQL, de licencia GPL,
+                         desarrollado y sostenido por el fundador de MySQL Michael (Monty) Widenius.<br/>
+                         Actualmente es uno de los motores de base de datos de código abierto y gratuito
+                         más populares del mundo, y su instalación viene incluida en el paquete de instalación
+                         del servidor apache <a class="font-weight-bold">XAMP</a>, con el cual vamos a realizar los ejemplos que
+                         encontraras en este OVI.<br/><br/>
+                        <div class="alert-info font-weight-bold ">
+                            Para más información haz clic en los siguientes imágenes.
+                        </div>    
+                        <div class="row text-center">
+                                <div class="col-6 w-50">
+                                    <a href="https://mariadb.org/" target="_blank"><img src="../wwwroot/Images/mariadb_org_rgb_h-1.png" alt="MariaDB logo" style="width: 250px;height: 180px;"></a>
+                                </div>
+                                <div class="col-6 w-50">
+                                        <a href="https://es.wikipedia.org/wiki/MariaDB"  target="_blank"><img src="../wwwroot/Images/1200px-Wikipedia-logo-v2-es.png" alt="wikipedia logo" style="width: 1S50px;height: 150px;"></a>                       
+                                </div>
+                            </div><br/>
+                    </p>
+                </div>
+
+                <div class="row"> 
+                  
+                        <div class="col-lg-10">
+                            <div class="text-right" style="height: 100px;">
+                              <button class="botonapp" onclick="Clicktarget('#PHP-tab')" >Anterior</button>
+                            </div>
+                        </div>  
+                        <div class="col-lg-2">
+                                <div class="text-right" style="height: 100px;">
+                                  <button class="botonapp" onclick="S_InstalandoXAMP()" >Siguiente</button>
+                                </div>
+                            </div>                     
+                    </div>
+            </div>
+        </div> <br/><br/>
+     
+    </div> <br/><br/>
+      
+    </div>
+          <div class="text-right">            
+                  <img class="sellos p-1" src="../wwwroot/Images/Sellos2.png" alt="Certificación calidad" style="width: 400px; height: 110px;" >
+            </div>
+
+ <!--Carga de scripst-->   
+ <script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+ <script src="../wwwroot/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+ <script src="../wwwroot/Js/OVI.js">   </script>
+</body>
+</html>
+

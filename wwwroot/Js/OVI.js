@@ -23,3 +23,40 @@ function openNav() {
   }
 
   
+  function S_introduccion(){
+    window.location.href="Introduccion.html";
+  }
+  
+  function S_InstalandoXAMP(){
+    window.location.href="InstalandoXAMP.html";
+  }
+
+
+  function Clicktarget(x){
+  $(x).click();  
+  }
+
+  //Función que retorna la pagina a la parte superior tras hacer click en los botones de paginación
+$(document).ready(function () {
+
+  $('.page-link').click(function () {
+    $('body,html').animate({
+      scrollTop: '0px'
+    },300);
+   
+  });
+});
+
+function verimg(params,contenedor) {
+var rta=params.id;
+var im=document.createElement("img");
+$(contenedor).empty();
+im.id="vimm";
+im.src=rta;
+im.style.height="650px";
+im.style.width="750px";
+
+contenedor.appendChild(im);
+$("#vmodal").click();
+}
+
