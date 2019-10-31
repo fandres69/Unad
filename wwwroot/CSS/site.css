@@ -117,3 +117,25 @@
    font-size: 32px;
   
  }
+
+ .coderhead{
+   color: #569cd6; 
+ }
+ .coderfunt{
+   color: #dcdcaa;
+ }
+ .codevar{
+   color: #ce9178;
+ }
+ .codecommet{
+   color: #6a9955;
+ }
+ .codetext{
+   color: white;
+ }
+ .codenum{
+  color: #9cdcfe;
+}
+.codecflu{
+  color: #c586c0;
+}

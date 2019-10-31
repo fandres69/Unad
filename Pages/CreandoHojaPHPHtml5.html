@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="../wwwroot/Images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../wwwroot/Images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../wwwroot/Images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../wwwroot/Images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../wwwroot/Images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../wwwroot/Images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../wwwroot/Images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../wwwroot/Images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../wwwroot/Images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="../wwwroot/Images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../wwwroot/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../wwwroot/Images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../wwwroot/Images/favicon-16x16.png">
+    <link rel="manifest" href="../wwwroot/Images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../wwwroot/Images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title> Programación web 1</title>
+    <link rel="stylesheet" href="../wwwroot/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../wwwroot/CSS/site.css">
+</head>
+<body>
+    <div class="Bsuperior fixed-top">
+      <div class="row w-100">
+        <div class="col-1">
+          <div class="CBton">
+            <a  href="javascript:void(0)" class="openbtn" onclick="openNav()" id="btnabrir">&#9776;</a>
+            <a  href="javascript:void(0)" class="openbtn" style="display: none;" onclick="closeNav()" id="btncerrar">&#9776;</a>
+          </div>
+      </div>
+      <div class="col-10 text-center"><h2>Creando archivo PHP de conexión</h2></div>
+      <div class="col-1"><img src="../wwwroot/Images/Lmenu.png" style="width: 100px; height: 100%;" alt="Logo Unad"></div>
+      </div>        
+    </div>  
+    <div id="Lateral" class="Menulateral">
+        <a href="Index.html">Inicio</a>
+        <a href="Introduccion.html">Introducción</a>
+        <a href="InstalandoXAMP.html">Instalando XAMP</a>
+        <a href="PreparandoBD.html">Preparando mi BD</a>
+        <a href="ConexcionPHP.html">Conexión a BD con PHP</a>
+        <a href="CreandoHojaPHPHtml5.html">Creando mi hoja PHP y HTML5</a>
+      </div>
+    <div id="Contenido">
+    <br/>
+    <br/>
+    <br/>	
+    <div class="card p-3 shadow alert-info">
+      <h3 class="text-center">Objetivo </h3>
+      <br/>
+      <p class="text-justify ">
+          <br/>
+          El objetivo de la presente sección es aprender a crear una pagina web,
+          que nos permita procesar información entre la base de datos y el formulario web,
+          además el uso de herramientas que ayudan a escribir aplicaciones rápidamente, como lo es Bootstrap.
+          <br/>
+          <i class="font-weight-bold">Empecemos…</i>                 
+      </p>
+    </div> 
+    <br/>
+    <p class="text-justify">
+      Ahora que ya tenemos nuestro archivo que gestiona la conexión a nuestra base de datos es hora de crear nuestro formulario web,
+      con PHP y HTML5, por lo cual, así como creamos nuestro archivo conexión.php, creamos uno denominado index.php.
+    </p><br/>
+    <div class="text-center">
+       <img src="../wwwroot/Images/Pag1.png" alt="imagen 1 Creando mi pagina web php html5" class="img-thumbnail">
+    </div>
+    <br/>
+    <h5>Ya con nuestro archivo creado pegamos el siguiente código.</h5>
+    <br/>
+
+    <div class="container" id="Codepage">
+      <div class="">        
+          <div class="bg-dark ">
+            <p class=" p-2"> 
+              <pre style="margin: 5px;">
+            <span class="coderhead">&lt?php</span> <span class="coderfunt">include(</span> <span class="codevar"> "conexion.php"</span><span class="coderfunt"> );</span> <span class="codecommet"> //hacemos la inclusion de nuestro archivo de conexión</span><span class="coderhead">?&gt</span>           
+            <span class="coderhead">&lt!DOCTYPE html&gt</span>
+            <span class="coderhead">&lthtml lang=</span><span class="codevar">"es"</span><span class="coderhead">&gt  
+            &lthead&gt
+            &ltmeta charset=<span class="codevar">"UTF-8"</span>&gt
+            &ltmeta name=<span class="codevar">"viewport"</span> content=<span class="codevar">"width=device-width, initial-scale=1.0"</span>&gt
+            $ltmeta http-equiv=<span class="codevar">"X-UA-Compatible" </span>content=<span class="codevar">"ie=edge"</span>&gt
+            &lttitle&gt<span class="codetext">CRUD con PHP y MySQL</span>&lt/title&gt
+            <span class="codecommet">&lt!-- Agregamos la biblioteca Bootstrap para mejorar un poco la apariencia de nuestro sitio rapidamente--&gt</span>
+            &ltlink rel=<span class="codevar">"stylesheet"</span>href=<span class="codevar">"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"</span>
+            integrity=<span class="codevar">"sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"</span>crossorigin=<span class="codevar">"anonymous"</span>&gt
+            &lt/head&gt
+            
+
+            &ltbody&gt 
+
+                  <span class="codecommet">&lt!--Agregamos los scripts necesarios para que Bootstrap funcione correctamente --&gt</span>
+                  &ltscript src=<span class="codevar">"https://code.jquery.com/jquery-3.3.1.slim.min.js" </span>
+                  integrity=<span class="codevar">"sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"</span>crossorigin=<span class="codevar">"anonymous"</span>&gt
+
+                  &ltscript src=<span class="codevar">"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" </span>
+                  integrity=<span class="codevar">"sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"</span>crossorigin=<span class="codevar">"anonymous"</span>&gt
+
+                  &ltscript src=<span class="codevar">"https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" </span>
+                  integrity=<span class="codevar">"sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"</span>crossorigin=<span class="codevar">"anonymous"</span>&gt
+
+
+                  &ltdiv class=<span class="codevar">"container text-center"</span>&gt
+                  &lth1&gt<span class="codetext">Mi CRUD con PHP y MySQL</span>&lt/h1&gt 
+                  &ltbr&gt
+                  &ltbr&gt
+                  &ltform action=<span class="codevar">""</span>method=<span class="codevar">"POST"</span>&gt
+                        &lt?php
+                        <span class="codecommet">//generamos nuestra consulta SQL para traer los datos desde nuestra base de datos</span>
+                       <span class="codenum">$consulta = </span><span class="codevar">"Select * from cursos_ofertados";</span>
+                       <span class="codenum">$resultado = </span><span class="coderfunt">mysqli_query(</span>$con, $consultas <span class="coderfunt">)or die (<span class="codevar">"Error al consultar los datos"</span>);</span>
+                        ?&gt
+                        &ltdiv class=<span class="codevar">"container w-50"</span>&gt
+                          &lttable class=<span class="codevar">"table table-striped table-bordered table-hover table-sensitive table-sm "</span>&gt
+                            &ltthead&gt
+                              &lttr&gt
+                                &ltth&gt<span class="codetext">No Curso</span>&lt/th&gt
+                                &ltth&gt<span class="codetext">Curso</span>&lt/th&gt
+                                &ltth&gt<span class="codetext">Valor</span>&lt/th&gt                                                               
+                              &lt/tr&gt
+                            &lt/thead&gt
+                            &lttbody&gt
+                                &lt?php
+                                 <span class="codenum">$curso_id= <span class="codecommet">0</span>;</span>
+                                 <span class="codenum">$curso_name= <span class="codevar">""</span>;</span>
+                                 <span class="codenum">$curso_val= <span class="codecommet">0</span>;</span>
+
+                                  <span class="codecflu">while(<span class="codenum">$columna =</span><span class="coderfunt">mysqli_fetch_array(<span class="codenum">$resultado</span>)</span>){
+                                   <span class="coderfunt">echo <span class="codevar">"&lttr&gt"</span>;</span> 
+                                   <span class="coderfunt">echo <span class="codevar">"&lttr&gt"</span>.<span class="codenum">$columna[<span class="codevar">'IdCurso'</span>]</span>.<span class="codevar">"&lt/td&gt&lttd&gt"</span>.<span class="codenum">$columna[<span class="codevar">'NombreCurso'</span>]</span>.<span class="codevar">"&lt/td&gt&lttd&gt"</span>.<span class="codenum">$columna[<span class="codevar">'ValorCurso'</span>]</span>.<span class="codevar">"&lt/td&gt"</span> ;</span> 
+                                   <span class="coderfunt">echo <span class="codevar">"&lt/tr&gt"</span>;</span> 
+                                  }</span>?&gt
+                            &lt/tbody&gt
+                        &lt/table&gt
+                        &lt/div&gt
+                    &ltdiv&gt
+                    &ltbutton&gt type=<span class="codevar">type="button"</span>class=<span class="codevar">class="btn btn-outline-dark" </span>style=<span class="codevar">"width: 150px" </span>data-toggle=<span class="codevar">"modal"</span>  data-target=<span class="codevar">"#Editar"</span>&gt<span class="codetext">Editar</span>&lt/button&gt
+                    &ltbutton&gt type=<span class="codevar">type="button"</span>class=<span class="codevar">class="btn btn-outline-danger" </span>style=<span class="codevar">"width: 150px" </span>data-toggle=<span class="codevar">"modal"</span>  data-target=<span class="codevar">"#Eliminar"</span>&gt<span class="codetext">Eliminar</span>&lt/button&gt                                  
+                    &lt/div&gt
+                    <span class="codecommet">&lt!-- Modal --&gt</span>
+                    &ltdiv&gt class=<span class="codevar">"modal fade"</span> id=<span class="codevar">"Editar" </span>tabindex=<span class="codevar">"-1"</span> role=<span class="codevar">"-1"</span>  aria-labelledby=<span class="codevar">"modelTitleId"</span> aria-hidden=<span class="codevar">"true"</span>&gt
+                    &lt/div&gt
+                </span>
+            </pre>
+
+                 
+            </p><br/>
+          </div>
+      
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!--Carga de scripst-->   
+<script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+<script src="../wwwroot/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+<script src="../wwwroot/Js/OVI.js">   </script>
+</body>
+</html>
