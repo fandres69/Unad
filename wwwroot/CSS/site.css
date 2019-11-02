@@ -99,6 +99,14 @@
     border: 1px solid #F0B429;  
     
   }
+.botonapp a{
+  border: none;
+}
+.botonapp a:hover{
+  background-color:white;
+  border: none;
+}
+
  .sellos{
   position: fixed;  
   bottom: 0;

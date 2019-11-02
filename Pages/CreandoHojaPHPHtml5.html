@@ -34,7 +34,7 @@
             <a  href="javascript:void(0)" class="openbtn" style="display: none;" onclick="closeNav()" id="btncerrar">&#9776;</a>
           </div>
       </div>
-      <div class="col-10 text-center"><h2>Creando archivo PHP de conexión</h2></div>
+      <div class="col-10 text-center"><h2>Creando archivo PHP y HTML5</h2></div>
       <div class="col-1"><img src="../wwwroot/Images/Lmenu.png" style="width: 100px; height: 100%;" alt="Logo Unad"></div>
       </div>        
     </div>  
@@ -45,6 +45,7 @@
         <a href="PreparandoBD.html">Preparando mi BD</a>
         <a href="ConexcionPHP.html">Conexión a BD con PHP</a>
         <a href="CreandoHojaPHPHtml5.html">Creando mi hoja PHP y HTML5</a>
+        <a href="Probando.html">Probando el formulario</a>
       </div>
     <div id="Contenido">
     <br/>
@@ -146,7 +147,53 @@
                     <span class="codecommet">&lt!-- Modal --&gt</span>
                     &ltdiv&gt class=<span class="codevar">"modal fade"</span> id=<span class="codevar">"Editar" </span>tabindex=<span class="codevar">"-1"</span> role=<span class="codevar">"-1"</span>  aria-labelledby=<span class="codevar">"modelTitleId"</span> aria-hidden=<span class="codevar">"true"</span>&gt
                     &ltdiv class=<span class="codevar">"modal-dialog"</span> role=<span class="codevar">"document"</span>&gt
-                    &lt/div&gt
+                    &ltdiv class=<span class="codevar">"modal-content"</span>&gt
+                        &ltdiv class=<span class="codevar">"modal-header"</span>&gt
+                        &lth5 class=<span class="codevar">"modal-title"</span>&gtModificación de curso&lt/h5&gt
+                        &ltbutton type=<span class="codevar">"button"</span> class=<span class="codevar">"close"</span> data-dismiss=<span class="codevar">"modal"</span> aria-label=<span class="codevar">"Close"</span>&gt
+                        &ltspan aria-hidden=<span class="codevar">"true"</span>&gt&times;&lt/span&gt
+                        &lt/button&gt
+                        &lt/div&gt
+                        &ltdiv class=<span class="codevar">"modal-body"</span>&gt
+                          &ltlabel&gt<span class="codetext">Ingrese No Curso a modificar:</span> &lt/label&gt 
+                          &ltinput type=<span class="codevar">"text"</span> for=<span class="codenum">"&lt?php $curso_id? &gt"</span>&gt&ltbr&gt
+                          &ltlabel &gt<span class="codetext">Nombre curso:</span>&lt/label&gt 
+                          &ltinput type=<span class="codevar">"text"</span> for=<span class="codenum">"&lt?php $curso_name?&gt"</span> &gt &ltbr&gt
+                          &ltlabel &gt<span class="codetext">Valor:</span>&lt/label&gt 
+                          &ltinput type=<span class="codevar">"text"</span> for=<span class="codenum">"&lt?php $curso_val?&gt"</span>&gt&ltbr&gt
+                          &lt/div&gt
+                          &ltdiv class=<span class="codevar">"modal-footer"</span>>
+                              &ltbutton type=<span class="codevar">"button"</span> class=<span class="codevar">"btn btn-secondary"</span> data-dismiss=<span class="codevar">"modal"</span>><span class="codetext">Close</span>&lt/button>
+                              &ltbutton type=<span class="codevar">"button"</span> class=<span class="codevar">"btn btn-success"</span>><span class="codetext">Save</span>&lt/button>
+                          &lt/div>
+                      &lt/div>
+                    &lt/div>
+                  &lt/div>
+
+                <span class="codecommet">&lt!-- Modal --></span>
+        &ltdiv class=<span class="codevar">"modal fade"</span> id=<span class="codevar">"Eliminar"</span> tabindex=<span class="codevar">"-1"</span> role=<span class="codevar">"dialog"</span> aria-labelledby=<span class="codevar">"modelTitleId"</span> aria-hidden=<span class="codevar">"true"</span>>
+          &ltdiv class=<span class="codevar">"modal-dialog"</span> role=<span class="codevar">"document"</span>>
+            &ltdiv class=<span class="codevar">"modal-content"</span>>
+                &ltdiv class="<span class="codevar">modal-header"</span>>
+                    &lth5 class=<span class="codevar">"modal-title"</span>><span class="codetext">Eliminar curso</span>&lt/h5>
+                      &ltbutton type=<span class="codevar">"button"</span> class=<span class="codevar">"close"</span> data-dismiss=<span class="codevar">"modal"</span> aria-label=<span class="codevar">"Close"</span>>
+                            &ltspan aria-hidden=<span class="codevar">"true"</span>>&<code>times;</code>&lt/span>
+                              &lt/button>
+                          &lt/div>
+                  &ltdiv class=<span class="codevar">"modal-body"</span>>
+                      Body
+                      &lt/div>
+                  &ltdiv class=<span class="codevar">"modal-footer"</span>>
+                    &ltbutton type=<span class="codevar">"button"</span> class=<span class="codevar">"btn btn-secondary"</span> data-dismiss=<span class="codevar">"modal"</span>><span class="codetext">Close</span>&lt/button>
+                      &ltbutton type=<span class="codevar">"button"</span> class=<span class="codevar">"btn btn-danger"</span>><span class="codetext">Save</span>&lt/button>
+                      &lt/div>
+                  &lt/div>
+              &lt/div>
+          &lt/div>
+      &lt/form>
+      &lt/div>
+  &lt/body>
+&lt/html>
                 </span>
             </pre>
 
@@ -156,7 +203,14 @@
       
       </div>
     </div>
-
+<br/>
+<br/>
+<div class="container text-center" id="Botones">
+  <div class="row w-100">           
+    <div class="col-md-2 w-25"><button class="botonapp"><a class="botonapp" href="./ConexcionPHP.html">Anterior</a></button></div>
+    <div class="col-md-2 w-25"><button class="botonapp"><a class="botonapp" href="./Probando.html">Siguiente</a></button></div>  
+</div>
+</div> 
   </div>
 
 </div>
