@@ -21,23 +21,110 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="../wwwroot/Images/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">   
-    <title> Programación web 1</title>
+    <title>OVI Programación web 1</title>
     <link rel="stylesheet" href="../wwwroot/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../wwwroot/CSS/site.css">
 </head>
-<body>
-        <div id="Lateral" class="Menulateral">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                <a href="#">Pag 1</a>
-                <a href="#">Pag 2</a>
-                <a href="#">Pag 3</a>
-                <a href="#">Pag 4</a>
-              </div>              
-              <div id="Contenido">
-                <button class="openbtn" onclick="openNav()">&#9776;</button>
-                <h2>Titulo del contenido</h2>
-                
+<body>      
+    <div class="Bsuperior fixed-top">
+      <div class="row w-100">
+        <div class="col-1">
+          <div class="CBton">
+            <a  href="javascript:void(0)" class="openbtn" onclick="openNav()" id="btnabrir">&#9776;</a>
+            <a  href="javascript:void(0)" class="openbtn" style="display: none;" onclick="closeNav()" id="btncerrar">&#9776;</a>
+          </div>
+      </div>    
+      <div class="col-10 text-center"><h2>Vinculación de una BD a una pagina con PHP 2</h2></div>
+      <div class="col-1"><img src="../wwwroot/Images/Lmenu.png" style="width: 100px; height: 100%;" alt="Logo Unad"></div>
+      </div>        
+    </div>  
+    <div id="Lateral" class="Menulateral">         
+        <div id="sfcxarl1hf1knljbym9tscc9qm6fzh1ucb5"></div><script type="text/javascript" src="https://counter10.wheredoyoucomefrom.ovh/private/counter.js?c=xarl1hf1knljbym9tscc9qm6fzh1ucb5&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas blogger"><img src="https://counter10.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=xarl1hf1knljbym9tscc9qm6fzh1ucb5" border="0" title="contador de visitas blogger" alt="contador de visitas blogger"></a></noscript>
+        <a href="Index.html">Inicio</a>
+        <a href="Introduccion.html">Introducción</a>
+        <a href="InstalandoXAMP.html">Instalando XAMP</a>
+        <a href="PreparandoBD.html">Preparando mi BD</a>
+        <a href="ConexcionPHP.html">Conexión a BD con PHP</a>
+        <a href="CreandoHojaPHPHtml5.html">Creando mi hoja PHP y HTML5</a>
+        <a href="Probando.html">Probando el formulario</a>
+        <a href="Actividades.html">Actividades</a>
+        <a href="Multimedia.html">Multimedia</a>
+        <a href="Autores.html">Autores</a>
+        <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    </div> 
+    <br/>               
+    <br/>               
+    <div id="Contenido">
+      <h2 class="text-center">Bienvenido al OVI Vinculación de una BD a una pagina con PHP</h2>
+      <br/>
+      <br/>
+      <div class="container shadow p-3 mb-5 bg-white rounded">
+        <p class="text-justify">Estimado amigo o amiga, tenga una cordial bienvenida a este OVI, esperando que sea útil y que le sirva ya sea en su etapa de aprendizaje y preparación,
+           o para reforzar un conocimiento previo del tema aquí abordado presentamos el OVI Vinculación de una BD a una pagina con PHP.
+        </p>
+      </div>
+      <br/>
+      <div class="container">
+        <h3>Información general</h3>
+        <br/>
+        <p class="text-justify">
+          Este OVI aborda la temática referente a como conectar una base de datos a una pagina PHP, que hace parte del curso Programación web 1 código 204035, del programa Tecnología en Desarrollo de Software de la universidad Nacional Abierta y a Distancia UNAD.
+          </p>
+          <p class="text-justify">
+            La temática abordada en este OVI esta diseñada para ser estudiada paso a paso, por lo que recomendamos no saltar ninguno de los temas expuestos en este OVI, y continuar el recorrido en orden de aparición en el menú lateral izquierdo, o haciendo clic en siguiente al final de cada página o sección de este OVI.
+          </p><br/>
+          <h3>Objetivo general</h3><br/>
+          <p class="text-justify">El objetivo general de este OVI es explicar cómo escribir páginas web conectadas a una base de datos,
+             que permita guardar los datos del cliente, o la aplicación, accediendo a ellos a través del lenguaje
+             Backend PHP, el cual es un lenguaje de programación de alto nivel orientado a objetos, con el cual 
+             podemos crear aplicaciones o servicios que se despliegan en servidores para la web.</p><br/>
+          <h3>¿Qué vamos a hacer en este OVI?</h3>
+          <p class="text-justify">
+              Es muy sencillo lo que vamos a hacer, son tres pasos donde vamos a adquirir el conocimiento necesario 
+              para conectar una base de datos a una pagina PHP y estos son:
+          </p>   
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="card p-2" style="height: 270px;">
+                  <h4>Paso 1</h4>
+                  <p>
+                    Instalar en nuestro equipo de cómputo el SDK de PHP, el servidor de Apache XAMP,
+                    que incluye la base de datos MySQL MariaDB, y el intérprete de lenguaje PHP, 
+                    para correr páginas web escritas en HTML5, JavaScript, y PHP.
+                  </p>
+                </div>
               </div>
+              <div class="col-md-4">
+                <div class="card p-2"style="height: 270px;">
+                  <h4>Paso 2</h4>
+                  <p>
+                    Escribir los scripts, clases y páginas web, necesarios para hacer un formulario en una página HTML5,
+                    que permita conectarnos a nuestro motor de base de datos y gestionar un CRUD
+                    (Creación, lectura, modificación y eliminación), de datos usando un caso de uso de una academia
+                    que ofrece cursos informáticos, enfocándonos en la lista de ofertas académicas y sus precios.
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card p-2"style="height: 270px;">
+                  <h4>Paso 3</h4>
+                  <p>
+                    Probar el funcionamiento de nuestro código generado, y observar las acciones realizadas desde
+                    nuestra página web, y nuestro motor de base de datos.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div><br/>
+      <div class="container">
+        <div class="text-right">
+          <button class="botonapp" onclick="S_introduccion()" >Siguiente</button>
+        </div>
+      </div>
+
+    </div>
 
  <!--Carga de scripst-->   
  <script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
@@ -45,3 +132,4 @@
  <script src="../wwwroot/Js/OVI.js">   </script>
 </body>
 </html>
+
