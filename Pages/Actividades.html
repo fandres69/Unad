@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="apple-touch-icon" sizes="57x57" href="../wwwroot/Images/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../wwwroot/Images/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../wwwroot/Images/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../wwwroot/Images/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../wwwroot/Images/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../wwwroot/Images/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../wwwroot/Images/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../wwwroot/Images/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../wwwroot/Images/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../wwwroot/Images/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../wwwroot/Images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../wwwroot/Images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../wwwroot/Images/favicon-16x16.png">
+    <link rel="manifest" href="../wwwroot/Images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../wwwroot/Images/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <title> Programación web 1</title>
+    <link rel="stylesheet" href="../wwwroot/lib/bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../wwwroot/CSS/site.css">
+</head>
+
+<body>
+    <div class="Bsuperior fixed-top">
+        <div class="row w-100">
+            <div class="col-1">
+                <div class="CBton">
+                    <a href="javascript:void(0)" class="openbtn" onclick="openNav()" id="btnabrir">&#9776;</a>
+                    <a href="javascript:void(0)" class="openbtn" style="display: none;" onclick="closeNav()"
+                        id="btncerrar">&#9776;</a>
+                </div>
+            </div>
+            <div class="col-10 text-center">
+                <h2>Actividades</h2>
+            </div>
+            <div class="col-1"><img src="../wwwroot/Images/Lmenu.png" style="width: 100px; height: 100%;"
+                    alt="Logo Unad"></div>
+        </div>
+    </div>
+    <div id="Lateral" class="Menulateral">
+            <div id="sfcxarl1hf1knljbym9tscc9qm6fzh1ucb5"></div><script type="text/javascript" src="https://counter10.wheredoyoucomefrom.ovh/private/counter.js?c=xarl1hf1knljbym9tscc9qm6fzh1ucb5&down=async" async></script><noscript><a href="https://www.contadorvisitasgratis.com" title="contador de visitas blogger"><img src="https://counter10.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=xarl1hf1knljbym9tscc9qm6fzh1ucb5" border="0" title="contador de visitas blogger" alt="contador de visitas blogger"></a></noscript>
+        <a href="Index.html">Inicio</a>
+        <a href="Introduccion.html">Introducción</a>
+        <a href="InstalandoXAMP.html">Instalando XAMP</a>
+        <a href="PreparandoBD.html">Preparando mi BD</a>
+        <a href="ConexcionPHP.html">Conexión a BD con PHP</a>
+        <a href="CreandoHojaPHPHtml5.html">Creando mi hoja PHP y HTML5</a>
+        <a href="Probando.html">Probando el formulario</a>
+        <a href="Actividades.html">Actividades</a>
+        <a href="Multimedia.html">Multimedia</a>
+        <a href="Autores.html">Autores</a>
+        <a class="twitter-timeline" href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Etfw">Tweets by UniversidadUNAD</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    </div>
+    <div id="Contenido">
+        <br />
+        <br />
+        <br />
+        <div class="container">
+            <div class="card p-3 shadow alert-info">
+                <h3 class="text-center">Objetivo </h3>
+                <br />
+                <p class="text-justify ">
+                    <br />
+                    El objetivo de la presente sección es reforzar nuestro conocimiento adquirido en este OVI,
+                    respondiendo unas preguntas relacionadas con el tema principal de este OVI.
+                    <br />
+                    <i class="font-weight-bold">Empecemos…</i>
+                </p>
+            </div>
+        </div>
+        <br/>
+        <br/>
+        <div class="container">
+            <div class="card">
+                <div class="card-header text-center">Responde las preguntas a continuación</div>
+            </div>
+            <br/>
+            <div class="card p-2 shadow" id="Preg1">
+                <div class="row">
+                    <div class="col-lg-12 w-100">
+                        <h5 class="text-center">Para iniciar el servicio de MySQL de Xampp debo:</h5>
+                        <ul>
+                            <li type="a"><div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="p1a" onclick="SelectorRespuestas(Rp1,this,p1b,p1c,p1d)">
+                                <label for="p1a" class="custom-control-label"> Abrir la pagina http://localhost:80/phpmyadmin/</label>
+                            </div></li>
+                            <li type="a"><div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="p1b" onclick="SelectorRespuestas(Rp1,this,p1a,p1c,p1d)">
+                                <label for="p1b" class="custom-control-label">Abrir el programa control panel de XAMP y hacer clic en Start de cada servicio</label>
+                            </div></li>
+                            <li type="a"><div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="p1c"onclick="SelectorRespuestas(Rp1,this,p1a,p1b,p1d)"> 
+                                <label for="p1c" class="custom-control-label">Ejecuta en la consola <code>Mysql --version</code></label>
+                            </div></li>
+                            <li type="a"><div class="custom-control custom-checkbox">
+                                <input type="checkbox" class="custom-control-input" id="p1d" onclick="SelectorRespuestas(Rp1,this,p1a,p1b,p1c)">
+                                <label for="p1d" class="custom-control-label">Abrir el administrador de servicios de windows y habilitar el servicio de XAMMP</label>
+                            </div></li>                        
+                        </ul>
+                        <div>
+                            <button class="btn btn-success btn-sm" onclick="verp1(Rp1)">Verificar</button>
+                            <input type="text" id="Rp1" hidden>
+                        </div>
+                    </div>
+                </div>
+            </div><br/>
+            <div class="card p-2 shadow" id="Preg2">
+                    <div class="row">
+                        <div class="col-lg-12 w-100">
+                            <h5 class="text-center">¿Siempre debo arrancar el servidor Apache para trabajar con php y XAMMP?</h5>
+                            <ul>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p2a" onclick="SelectorRespuestas(Rp2,this,p2b,p2c,p2d)">
+                                    <label for="p2a" class="custom-control-label">Si, el inicio del servidor Apache es necesario</label>
+                                </div></li>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p2b" onclick="SelectorRespuestas(Rp2,this,p2a,p2c,p2d)">
+                                    <label for="p2b" class="custom-control-label">No, el inicio del servidor Apache es necesario</label>
+                                </div></li>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p2c" onclick="SelectorRespuestas(Rp2,this,p2a,p2b,p2d)">
+                                    <label for="p2c" class="custom-control-label">El servidor Apache no funciona en windows</code></label>
+                                </div></li>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p2d" onclick="SelectorRespuestas(Rp2,this,p2a,p2b,p2c)">
+                                    <label for="p2d" class="custom-control-label">La aplicación no requiere de Apache</label>
+                                </div></li>                        
+                            </ul>
+                            <div>
+                                <button class="btn btn-success btn-sm" onclick="verp2(Rp2)">Verificar</button>
+                                <input type="text" id="Rp2" hidden>
+                            </div>
+                        </div>
+                    </div>
+                </div><br/>
+            <div class="card p-2 shadow" id="Preg3">
+                    <div class="row">
+                        <div class="col-lg-12 w-100">
+                            <h5 class="text-center">¿Todas las paginas que usan código de php deben tener la extension <code>.php</code>? </h5>
+                            <ul>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p3a" onclick="SelectorRespuestas(Rp3,this,p3b,p3c,p3d)">
+                                    <label for="p3a" class="custom-control-label">No es necesario que los archivos terminen con la extension .php</label>
+                                </div></li>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p3b" onclick="SelectorRespuestas(Rp3,this,p3a,p3c,p3d)">
+                                    <label for="p3b" class="custom-control-label">No es necesario porque el sdk de php funciona en el directorio del proyecto</label>
+                                </div></li>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p3c" onclick="SelectorRespuestas(Rp3,this,p3a,p3b,p3d)">
+                                    <label for="p3c" class="custom-control-label">No es necesario porque el código escrito en php es un lenguaje compilado y no interpretado</code></label>
+                                </div></li>
+                                <li type="a"><div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="p3d" onclick="SelectorRespuestas(Rp3,this,p3a,p3b,p3c)">
+                                    <label for="p3d" class="custom-control-label">Si es necesario porque si no el servidor no interpretaría el código correctamente</label>
+                                </div></li>                        
+                            </ul>
+                            <div>
+                                <button class="btn btn-success btn-sm" onclick="verp3(Rp3)">Verificar</button>
+                                <input type="text" id="Rp3" hidden>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+        <br />
+        <br />
+        <div class="container text-center" id="Botones">
+                <div class="row w-100">           
+                  <div class="col-md-2 w-25"><button class="botonapp"><a class="botonapp" href="./Probando.html">Anterior</a></button></div>
+                  <div class="col-md-2 w-25"><button class="botonapp"><a class="botonapp" href="./Multimedia.html">Siguiente</a></button></div>  
+              </div>
+              </div>        
+    </div>
+
+    </div>
+
+
+    <!--Carga de scripst-->
+    <script src="../wwwroot/lib/jquery/dist/jquery.min.js"></script>
+    <script src="../wwwroot/lib/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <script src="../wwwroot/Js/OVI.js">   </script>
+</body>
+
+</html>

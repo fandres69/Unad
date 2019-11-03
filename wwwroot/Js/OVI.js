@@ -60,3 +60,43 @@ contenedor.appendChild(im);
 $("#vmodal").click();
 }
 
+var R1="p1b";
+var R2="p2a";
+var R3="p3d";
+
+
+function SelectorRespuestas(respuesta,generador,ck2,ck3,ck4) {
+   if(generador.checked===true){
+     ck2.checked=false;
+     ck3.checked=false;
+     ck4.checked=false;
+   }
+$(respuesta).val(generador.id);
+
+}
+
+function verp1(res) {
+  var mres=$(res).val();
+  if(mres===R1){
+    alert('Buen trabajo, has escogido la respuesta correcta')
+  }else{
+    alert('has fallado, intentalo de nuevo')
+  }  
+}
+
+function verp2(res) {
+  var mres=$(res).val();
+  if(mres===R2){
+    alert('Buen trabajo, has escogido la respuesta correcta')
+  }else{
+    alert('has fallado, intentalo de nuevo')
+  }  
+}
+function verp3(res) {
+  var mres=$(res).val();
+  if(mres===R3){
+    alert('Buen trabajo, has escogido la respuesta correcta')
+  }else{
+    alert('has fallado, intentalo de nuevo')
+  }  
+}
